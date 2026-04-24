@@ -1,0 +1,14 @@
+body{
+    background-color: ghostwhite;
+}
+
+
+@font-face {
+    font-family: "cactus";
+    src: url("cactus.woff") format("woff");
+}
+
+h1 {
+    font-family: "cactus";
+    font-size:200px;
+}
