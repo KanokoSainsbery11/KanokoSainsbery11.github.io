@@ -1,14 +1,57 @@
-body{
-    background-color: ghostwhite;
-}
-
-
 @font-face {
-    font-family: "cactus";
-    src: url("cactus.woff") format("woff");
+  font-family: "cactus";
+  src: url("CactusJack.woff") format("woff");
 }
 
-h1 {
+
+.left h1 {
     font-family: "cactus";
-    font-size:200px;
+    font-size: 120px;
+    margin: 0;
+    line-height: 0.9;
+    margin-left: 30px;
+}
+
+
+
+/* layout */
+.right {
+    font-family: "cactus";
+}
+
+.item {
+    font-family: "cactus";
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left:900px
+}
+
+
+
+
+
+
+
+/* number to be shown first */
+.number {
+    transition: 0.3s ease;
+}
+
+/* text to be hidden at first by number */
+.text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* hoverering effect */
+.item:hover .number {
+    opacity: 0;
+}
+
+.item:hover .text {
+    opacity: 1;
 }
